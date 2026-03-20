@@ -56,7 +56,10 @@ export default function CartScreen({ navigation }) {
     <View style={styles.container}>
 
       {/* Header */}
-      <TouchableOpacity style={styles.back}>
+     <TouchableOpacity
+        style={styles.back}
+        onPress={() => navigation.navigate("Home")}
+      >
         <Text style={{ fontSize: 18 }}>←</Text>
       </TouchableOpacity>
 
